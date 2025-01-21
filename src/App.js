@@ -9,9 +9,10 @@ import Trend from './components/Trend/Trend';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/giphy">
         <Navbar />
         <Routes>
+          <Route path="/" element={<Search />} />
           <Route path="/random" element={<Random />} />
           <Route path="/trend" element={<Trend />} />
           <Route path="*" element={<Search />} />
