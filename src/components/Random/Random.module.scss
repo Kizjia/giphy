@@ -1,0 +1,54 @@
+.randomWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; // Центрируем по вертикали
+  background-color: #000; // Фон для контекста
+}
+
+.randomGiphCard {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+}
+
+.randomGiphImage {
+  width: 400px; // Размер изображения
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.button {
+  cursor: pointer;
+  background-color: #9b4dff;
+  border: none;
+  color: white;
+  width: 68px;
+  height: 68px;
+  outline: none;
+  animation: glowing 1.5s ease-in-out infinite;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px; // Расстояние от карточки
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #f54291;
+  box-shadow: 0 0 20px rgba(245, 66, 145, 0.5);
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

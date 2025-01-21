@@ -1,0 +1,48 @@
+/* styles.module.scss */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.navItem {
+  font-family: 'Press Start 2P', cursive; /* Применяем игровой шрифт */
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 12px 20px;
+  margin: 0 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(45deg, #9b4dff, #f54291, #00ffea);
+    background-size: 300% 300%;
+    animation: glowing 1.5s ease-in-out infinite;
+    color: white;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.active {
+  color: transparent;
+  background: linear-gradient(60deg, #ff6f61, #9b4dff, #00bcd4);
+  background-clip: text;
+  font-weight: bold;
+}

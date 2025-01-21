@@ -1,0 +1,68 @@
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.input {
+  width: 948px;
+  height: 28px;
+  padding: 15px;
+  font-size: 18px;
+  outline: none;
+  color: black;
+
+  &:focus {
+    border-color: #9b4dff;
+  }
+
+  &::placeholder {
+    color: #bbb;
+  }
+}
+
+// .button {
+//   cursor: pointer;
+//   background-color: #9b4dff;
+
+//   border: none;
+//   color: white;
+//   width: 68px;
+//   height: 61px;
+
+//   //   font-size: 12px;
+//   padding: 15.606px 15px;
+//   //   outline: none;
+// }
+
+.button {
+  cursor: pointer;
+  background-color: #9b4dff;
+  border: none;
+  color: white;
+  width: 68px;
+  height: 61px;
+  padding: 15.606px 15px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(155, 77, 255, 0.5);
+  animation: glowing 1.5s ease-in-out infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #f54291;
+  box-shadow: 0 0 20px rgba(245, 66, 145, 0.5);
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.resultsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding: 9px;
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.giphContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Расстояние между карточками */
+  margin-bottom: 30px; /* Отступ снизу */
+}
+
+.giphCard {
+  width: 251px;
+  height: 251px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+}
+
+.giphCard:hover {
+  transform: scale(1.05); /* Немного увеличиваем при ховере */
+}
+
+.giphImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.loadMoreBtn {
+  background-color: #9b4dff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  box-shadow: 0 0 10px rgba(155, 77, 255, 0.5);
+  animation: glowing 1.5s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+.loadMoreBtn:hover {
+  background-color: #f54291;
+  box-shadow: 0 0 20px rgba(245, 66, 145, 0.5);
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.empty {
+  font-size: 32px;
+  font-family: 'Press Start 2P', cursive; /* Применяем игровой шрифт */
+  color: white;
+}
